@@ -1,5 +1,4 @@
 import {
-  AfterViewChecked,
   ChangeDetectionStrategy,
   Component,
   EventEmitter,
@@ -31,8 +30,8 @@ export class ButtonComponent implements OnInit {
     this.counterClick.emit();
   }
 
-  get renderTemplate() {
-    console.log(`Rendering template - ${this.name}`);
+  get evaluateTemplate() {
+    console.log(`Evaluating template - ${this.name}`);
     return '';
   }
 }

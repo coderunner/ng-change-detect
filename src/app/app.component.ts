@@ -1,8 +1,4 @@
-import {
-  AfterViewChecked,
-  ChangeDetectionStrategy,
-  Component,
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -19,8 +15,8 @@ export class AppComponent {
     this.total++;
   }
 
-  get renderTemplate() {
-    console.log(`Rendering template - app`);
+  get evaluateTemplate() {
+    console.log(`Evaluating template - app`);
     return '';
   }
 }
